@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "tsc && rsync -av --exclude='*.ts' src/ dist/",
-"build:vendor": "esbuild node_modules/bootgs/dist/index.js --bundle --outfile=src/libs/bootgs.bundle.js --format=iife --global-name=BootGS --target=es2022",    
+    "build:vendor": "esbuild node_modules/bootgs/dist/index.js --bundle --outfile=src/libs/bootgs.bundle.js --format=iife --global-name=BootGS --target=es2022",
     "push": "pnpm build && clasp push -f",
     "pull": "clasp pull && cp src/appsscript.json .",
     "update:component": "pnpm dlx npm-check-updates -u && pnpm install"
