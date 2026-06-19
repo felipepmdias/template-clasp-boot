@@ -1,0 +1,30 @@
+{
+  "scriptId": "1259MOUfa4JWVNEPkDZia2Wdb0jfThjlDxx9hFwgzM5BYCL0a5VHk9Rhl",
+  "rootDir": "dist/",
+  "scriptExtensions": [".js", ".gs"],
+  "htmlExtensions": [
+    ".html"
+  ],
+  "jsonExtensions": [
+    ".json"
+  ],
+  "filePushOrder": [
+    "dist/libs/bootgs.bundle.js",
+    "dist/libs/FuzzySet.js",
+    "dist/libs/luxon.min.js",
+    "dist/libs/GasDB.js",
+    "dist/utils/GuidUtils.js",
+    "dist/utils/RSSGenerator.js",
+    "dist/dto/deezer.types.js",
+    "dist/dto/podcast.types.dto.js",
+    "dist/entities/Tipos.js",
+    "dist/rest/BaseRestClient.js",    
+    "dist/repositories/BaseRepository.js",
+    "dist/repositories/PodcastRepository.js",
+    "dist/repositories/EpisodeRepository.js", 
+    "dist/services/DeezerMapper.js",    
+    "dist/services/IPodcastService.js",
+    "dist/services/DeezerService.js"
+  ],
+  "skipSubdirectories": false
+}

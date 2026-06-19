@@ -1,0 +1,9 @@
+lib/types/**
+# ignore even valid files if in…
+.git/**
+dist/**
+node_modules/**
+.clasp.json
+.gitignore
+.vscode/**
+.claspignore

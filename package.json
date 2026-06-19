@@ -1,0 +1,27 @@
+{
+  "name": "template-gas-bootgs",
+  "version": "1.0.0",
+  "description": "Template para Google Apps Script usando Clasp, BootGS e TypeScript com pnpm",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc && rsync -av --exclude='*.ts' src/ dist/",
+    "push": "pnpm build && clasp push -f",
+    "pull": "clasp pull && cp src/appsscript.json .",
+    "update:component": "pnpm dlx npm-check-updates -u && pnpm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootgs": "^1.9.2"
+  },
+  "devDependencies": {
+    "@google/clasp": "^3.3.0",
+    "@types/google-apps-script": "^2.0.11",
+    "@types/luxon": "^3.7.1",
+    "gas-db": "^0.0.1",
+    "luxon": "^3.5.0",
+    "typescript": "^6.0.3"
+  }
+}
