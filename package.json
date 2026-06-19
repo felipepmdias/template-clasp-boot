@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "tsc && rsync -av --exclude='*.ts' src/ dist/",
+"build:vendor": "esbuild node_modules/bootgs/dist/index.js --bundle --outfile=src/libs/bootgs.bundle.js --format=iife --global-name=BootGS --target=es2022",    
     "push": "pnpm build && clasp push -f",
     "pull": "clasp pull && cp src/appsscript.json .",
     "update:component": "pnpm dlx npm-check-updates -u && pnpm install"
@@ -14,12 +15,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootgs": "^1.9.2"
+    "bootgs": "^1.9.2",
+    "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {
     "@google/clasp": "^3.3.0",
     "@types/google-apps-script": "^2.0.11",
     "@types/luxon": "^3.7.1",
+    "esbuild": "^0.28.1",
     "gas-db": "^0.0.1",
     "luxon": "^3.5.0",
     "typescript": "^6.0.3"

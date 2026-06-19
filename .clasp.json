@@ -11,20 +11,7 @@
   "filePushOrder": [
     "dist/libs/bootgs.bundle.js",
     "dist/libs/FuzzySet.js",
-    "dist/libs/luxon.min.js",
-    "dist/libs/GasDB.js",
-    "dist/utils/GuidUtils.js",
-    "dist/utils/RSSGenerator.js",
-    "dist/dto/deezer.types.js",
-    "dist/dto/podcast.types.dto.js",
-    "dist/entities/Tipos.js",
-    "dist/rest/BaseRestClient.js",    
-    "dist/repositories/BaseRepository.js",
-    "dist/repositories/PodcastRepository.js",
-    "dist/repositories/EpisodeRepository.js", 
-    "dist/services/DeezerMapper.js",    
-    "dist/services/IPodcastService.js",
-    "dist/services/DeezerService.js"
+    "dist/libs/luxon.min.js"
   ],
   "skipSubdirectories": false
 }
